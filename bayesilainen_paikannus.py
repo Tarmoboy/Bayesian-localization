@@ -335,6 +335,7 @@ virhe = 0.001
 
 # Funktioiden kutsuminen
 posteriori = posteriorijakauma(kartta, havainnot, liikkeet, virhe)
+#piirra_kartta(kartta, posteriori)
 piirra_kartta(kartta)
 visualisoi_jakauma(posteriori)
 
@@ -343,7 +344,6 @@ visualisoi_jakauma(posteriori)
 #posteriori90 = posteriorijakauma(kartta, havainnot, liikkeet90, virhe)
 #posteriori180 = posteriorijakauma(kartta, havainnot, liikkeet180, virhe)
 #posteriori270 = posteriorijakauma(kartta, havainnot, liikkeet270, virhe)
-#piirra_kartta(kartta, posteriori)
 #piirra_kartta(kartta)
 #visualisoi_jakauma(posteriori)
 #visualisoi_jakauma(posteriori90)
