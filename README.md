@@ -6,13 +6,21 @@ Imagine sitting inside a closed vehicle that is placed on a grid-like flat surfa
 
 ## Implementation
 The project is implemented in Python and utilizes matplotlib for visualization. The core functions are:
+
 `havaitse(p, kartta, havainto, virhe)`: Updates the probabilities for each grid cell based on the latest color observation.
+
 `liiku(p, liike)`: Moves the probability distribution according to the vehicle's motion.
+
 `posteriorijakauma(kartta, havainnot, liikkeet, virhe)`: Determines the posterior distribution based on the observations and movements.
+
 `piirra_kartta(kartta, p=None)`: Draws the grid map with optional probability overlays.
+
 `visualisoi_jakauma(p)`: Visualizes the probability distribution using a color map.
+
 `kaanna_liikkeet(liikkeet)`: Rotates the movement vectors by 90, 180, and 270 degrees to account for initial unknown orientation.
+
 `yhdista_jakaumat(jakaumat)`: Combines multiple probability distributions and normalizes the result.
+
 `satunnainen_kartta(rivit, sarakkeet)`: Generates a random grid map.
 
 ## Running the simulation
