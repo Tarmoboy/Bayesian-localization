@@ -1,7 +1,7 @@
 # Bayesian localization
 This project is a Python simulation of a Bayesian localization scenario. The simulation demonstrates how Bayesian inference can be used to estimate the location of a vehicle on a grid map, based solely on its movements and color observations. The program is written in Finnish for a university course project on mathematical modeling.
 
-## Scenario descripotion
+## Scenario description
 Imagine sitting inside a closed vehicle that is placed on a grid-like flat surface. The vehicle can move one step at a time either forward, backward, left, or right, but you cannot control its direction. With every step, you receive a color observation from the surface you're currently on. The colors can be blue, red, green, or the surface might be colorless. You also have a map of the area with each grid cell colored accordingly. However, you do not know your initial position or orientation relative to the map. Your goal is to determine your location on the map with as few steps as possible, keeping in mind that your memory only holds the last 10 steps. Additionally, there's a 0.001 probability that the color observation you receive might be incorrect. You do not need to consider reaching the edge of the grid area in this simulation.
 
 ## Implementation
