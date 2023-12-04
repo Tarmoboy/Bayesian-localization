@@ -379,9 +379,23 @@ visualisoi_jakauma(posteriori)
 # joka ajolla saman kartan
 #seed = 6125 # käytetty 3x4- ja 5x6-karttoihin
 #seed = 1434 # käytetty 10x10-karttaan
+#seed = 4420 # käytetty 25x25-karttaan
 #np.random.seed(seed)
-#kartta = satunnainen_kartta(10, 10)
-#print(kartta)
+
+# 25x25-kartta ja esimerkkiliikkeet
+#kartta = satunnainen_kartta(25, 25)
+#liikkeet = [[0,1],[0,1],[1,0],[0,1],[0,1],[-1,0],[-1,0],[0,1],[-1,0],[0,1]]
+#havainnot = ['E','R','B','G','B','B','R','G','R','R']
 #posteriori = posteriorijakauma(kartta, havainnot, liikkeet, virhe)
 #piirra_kartta(kartta)
 #visualisoi_jakauma(posteriori)
+#liikkeet90, liikkeet180, liikkeet270 = kaanna_liikkeet(liikkeet)
+#posteriori90 = posteriorijakauma(kartta, havainnot, liikkeet90, virhe)
+#posteriori180 = posteriorijakauma(kartta, havainnot, liikkeet180, virhe)
+#posteriori270 = posteriorijakauma(kartta, havainnot, liikkeet270, virhe)
+#visualisoi_jakauma(posteriori90)
+#visualisoi_jakauma(posteriori180)
+#visualisoi_jakauma(posteriori270)
+#yhdistetty_jakauma = yhdista_jakaumat([posteriori, posteriori90, 
+#                                       posteriori180, posteriori270])
+#visualisoi_jakauma(yhdistetty_jakauma)
