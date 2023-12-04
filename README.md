@@ -39,8 +39,8 @@ kartta = [['R', 'G', 'E', 'R', 'G', 'G', 'G', 'R', 'G', 'G'],
           ['E', 'E', 'R', 'G', 'E', 'E', 'R', 'G', 'G', 'E'],
           ['E', 'R', 'G', 'E', 'B', 'B', 'R', 'R', 'R', 'B'],
           ['R', 'E', 'G', 'E', 'E', 'R', 'E', 'B', 'B', 'G']]  # Define the grid map
+liikkeet = [[0,1],[1,0],[1,0],[0,1],[-1,0],[-1,0],[1,0],[-1,0],[0,1],[0,-1]]  # Define the movements
 havainnot = ['G','E','E','B','B','G','B','G','G','G']  # Define the color observations
-liikkeet = [[0,0],[1,0],[1,0],[0,1],[-1,0],[-1,0],[1,0],[-1,0],[0,1],[0,-1]]  # Define the movements
 posteriori = posteriorijakauma(kartta, havainnot, liikkeet, 0.001)
 piirra_kartta(kartta)
 visualisoi_jakauma(posteriori)
