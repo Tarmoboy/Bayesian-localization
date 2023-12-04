@@ -320,8 +320,6 @@ kartta = [['R', 'G', 'E', 'R', 'G', 'G', 'G', 'R', 'G', 'G'],
           ['E', 'E', 'R', 'G', 'E', 'E', 'R', 'G', 'G', 'E'],
           ['E', 'R', 'G', 'E', 'B', 'B', 'R', 'R', 'R', 'B'],
           ['R', 'E', 'G', 'E', 'E', 'R', 'E', 'B', 'B', 'G']]
-# Havainnot: mitä kartan värejä auto havaitsee
-havainnot = ['G','E','E','B','B','G','B','G','G','G']
 # Liikkeet: mihin auto liikkuu. Aluksi auto on paikallaan, kun ensimmäinen
 # havainto saadaan. Ensimmäinen koordinaatti on y muutos, 
 # toinen x muutos.
@@ -329,7 +327,9 @@ havainnot = ['G','E','E','B','B','G','B','G','G','G']
 # [-1,0] -> liike ylös
 # [0,1] -> liike oikealle
 # [0,-1] -> liike vasemmalle
-liikkeet = [[0,0],[1,0],[1,0],[0,1],[-1,0],[-1,0],[1,0],[-1,0],[0,1],[0,-1]]
+liikkeet = [[0,1],[1,0],[1,0],[0,1],[-1,0],[-1,0],[1,0],[-1,0],[0,1],[0,-1]]
+# Havainnot: mitä kartan värejä auto havaitsee
+havainnot = ['G','E','E','B','B','G','B','G','G','G']
 # Todennäköisyys, että liikkeen jälkeen tehty havainto onkin väärä
 virhe = 0.001
 
@@ -359,8 +359,8 @@ visualisoi_jakauma(posteriori)
 #          ['R', 'B', 'B', 'B', 'G', 'G'],
 #          ['R', 'G', 'B', 'B', 'E', 'R'],
 #          ['G', 'G', 'G', 'E', 'E', 'B']]
+#liikkeet = [[0,1],[0,-1],[0,1],[1,0]]
 #havainnot = ['E','B','E','B']
-#liikkeet = [[0,0],[0,-1],[0,1],[1,0]]
 #posteriori = posteriorijakauma(kartta, havainnot, liikkeet, virhe)
 #piirra_kartta(kartta)
 #visualisoi_jakauma(posteriori)
@@ -369,8 +369,8 @@ visualisoi_jakauma(posteriori)
 #kartta = [['G', 'G', 'R', 'E'],
 #          ['B', 'E', 'G', 'B'],
 #          ['E', 'B', 'R', 'E']]
+#liikkeet = [[0,1],[0,-1],[0,1]]
 #havainnot = ['E','B','E']
-#liikkeet = [[0,0],[0,-1],[0,1]]
 #posteriori = posteriorijakauma(kartta, havainnot, liikkeet, virhe)
 #piirra_kartta(kartta)
 #visualisoi_jakauma(posteriori)
