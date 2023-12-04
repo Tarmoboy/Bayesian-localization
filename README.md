@@ -46,5 +46,9 @@ piirra_kartta(kartta)
 visualisoi_jakauma(posteriori)
 ```
 
+![](10x10kartta.png)
+
+![](10x10tn10h.png)
+
 ## Contributions
 This is an open project, and contributions are welcome. If you have ideas for improvement or want to adapt the project for more complex scenarios, feel free to fork the repository and submit pull requests.
